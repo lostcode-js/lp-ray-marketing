@@ -48,9 +48,9 @@ const AboutSection = (props) => {
   return (
     <Section mobileTop>
       <h1 className="text-4xl md:text-6xl font-extrabold leading-snug mt-8 md:mt-0">
-        Hi, I'm
+        Olá, Eu sou
         <br />
-        <span className="bg-white px-1 italic">Wawa Sensei</span>
+        <span className="bg-white px-1 italic">Rayana Vasconcelos</span>
       </h1>
       <motion.p
         className="text-lg text-gray-600 mt-4"
@@ -67,9 +67,9 @@ const AboutSection = (props) => {
           delay: 1.5,
         }}
       >
-        I make YouTube videos to help developers
+        Especializada em estratégias digitais, conteúdo persuasivo
         <br />
-        learn how to build 3D apps
+        e gestão de mídias sociais para impulsionar o crescimento e a visibilidade das empresas.
       </motion.p>
       <motion.button
         onClick={() => setSection(3)}
@@ -88,7 +88,7 @@ const AboutSection = (props) => {
           delay: 2,
         }}
       >
-        Contact me
+        Contate-me
       </motion.button>
     </Section>
   );
@@ -96,38 +96,38 @@ const AboutSection = (props) => {
 
 const skills = [
   {
-    title: "Threejs / React Three Fiber",
+    title: "Conhecimento em plataformas de mídia social",
     level: 80,
   },
   {
-    title: "React / React Native",
+    title: "Criatividade",
     level: 90,
   },
   {
-    title: "Nodejs",
+    title: "Excelente habilidade de comunicação",
     level: 90,
   },
   {
-    title: "Typescript",
+    title: "Análise de dados e métricas",
     level: 60,
   },
   {
-    title: "3D Modeling",
-    level: 40,
+    title: "Gestão de comunidade e engajamento",
+    level: 50,
   },
 ];
 const languages = [
   {
-    title: "🇫🇷 French",
+    title: "🇧🇷 Português",
     level: 100,
   },
   {
-    title: "🇺🇸 English",
-    level: 80,
+    title: "🇺🇸 Inglês",
+    level: 60,
   },
   {
-    title: "🇯🇵 Japanese",
-    level: 20,
+    title: "🇪🇸 Espanhol",
+    level: 80,
   },
 ];
 
@@ -135,10 +135,10 @@ const SkillsSection = () => {
   return (
     <Section>
       <motion.div className="w-full" whileInView={"visible"}>
-        <h2 className="text-3xl md:text-5xl font-bold text-white">Skills</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-white">Habilidades</h2>
         <div className="mt-8 space-y-4">
           {skills.map((skill, index) => (
-            <div className="w-full md:w-64" key={index}>
+            <div className="w-full md:w-80" key={index}>
               <motion.h3
                 className="text-lg md:text-xl font-bold text-gray-100"
                 initial={{
@@ -180,11 +180,11 @@ const SkillsSection = () => {
         </div>
         <div>
           <h2 className="text-3xl md:text-5xl font-bold mt-10 text-white">
-            Languages
+            Idiomas
           </h2>
           <div className="mt-8 space-y-4">
             {languages.map((lng, index) => (
-              <div className="w-full md:w-64" key={index}>
+              <div className="w-full md:w-80" key={index}>
                 <motion.h3
                   className="text-lg md:text-xl font-bold text-gray-100"
                   initial={{
@@ -248,14 +248,14 @@ const ProjectsSection = () => {
           className="hover:text-indigo-600 transition-colors"
           onClick={previousProject}
         >
-          ← Previous
+          ← Anterior
         </button>
-        <h2 className="text-3xl md:text-5xl font-bold">Projects</h2>
+        <h2 className="text-3xl md:text-5xl font-bold">Projetos</h2>
         <button
           className="hover:text-indigo-600 transition-colors"
           onClick={nextProject}
         >
-          Next →
+          Próximo →
         </button>
       </div>
     </Section>
@@ -266,14 +266,14 @@ const ContactSection = () => {
   const [state, handleSubmit] = useForm("mayzgjbd");
   return (
     <Section>
-      <h2 className="text-3xl md:text-5xl font-bold">Contact me</h2>
+      <h2 className="text-3xl md:text-5xl font-bold">Contate-me</h2>
       <div className="mt-8 p-8 rounded-md bg-white bg-opacity-50 w-96 max-w-full">
         {state.succeeded ? (
-          <p className="text-gray-900 text-center">Thanks for your message !</p>
+          <p className="text-gray-900 text-center">Obrigado pela sua mensagem!</p>
         ) : (
           <form onSubmit={handleSubmit}>
             <label for="name" className="font-medium text-gray-900 block mb-1">
-              Name
+              Nome
             </label>
             <input
               type="text"
@@ -303,7 +303,7 @@ const ContactSection = () => {
               for="email"
               className="font-medium text-gray-900 block mb-1 mt-8"
             >
-              Message
+              Mensagem
             </label>
             <textarea
               name="message"
@@ -318,7 +318,7 @@ const ContactSection = () => {
               disabled={state.submitting}
               className="bg-indigo-600 text-white py-4 px-8 rounded-lg font-bold text-lg mt-16 "
             >
-              Submit
+              Enviar
             </button>
           </form>
         )}
