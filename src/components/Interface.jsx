@@ -67,9 +67,11 @@ const AboutSection = (props) => {
           delay: 1.5,
         }}
       >
-        Especializada em estratégias digitais, conteúdo persuasivo
+        Especializada em estratégias digitais,
         <br />
-        e gestão de mídias sociais para impulsionar o crescimento e a visibilidade das empresas.
+        e gestão de mídias sociais para impulsionar
+        <br />
+        o crescimento e a visibilidade das empresas.
       </motion.p>
       <motion.button
         onClick={() => setSection(3)}
@@ -267,7 +269,7 @@ const ContactSection = () => {
   return (
     <Section>
       <h2 className="text-3xl md:text-5xl font-bold">Contate-me</h2>
-      <div className="mt-8 p-8 rounded-md bg-white bg-opacity-50 w-96 max-w-full">
+      <div className="mt-8 p-8 rounded-md bg-white bg-opacity-50 w-96 md:w-2/6 max-w-full">
         {state.succeeded ? (
           <p className="text-gray-900 text-center">Obrigado pela sua mensagem!</p>
         ) : (

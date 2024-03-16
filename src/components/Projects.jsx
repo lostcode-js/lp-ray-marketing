@@ -8,34 +8,22 @@ import { useEffect, useRef } from "react";
 
 export const projects = [
   {
-    title: "Wawatmos",
-    url: "https://r3f-wawatmos-final.vercel.app/",
-    image: "projects/wawatmos.jpg",
-    description: "Recreating the Atmos Awwwards website with React Three Fiber",
+    title: "Lost Code",
+    url: "https://www.instagram.com/lostcode.js",
+    image: "projects/lostcode.png",
+    description: "Programador Frontend",
   },
   {
-    title: "Portfolio Baking",
-    url: "https://www.youtube.com/watch?v=YkHqpqJgLKw",
-    image: "projects/baking.jpg",
-    description: "Learn how to bake a 3D model with Blender and use it in r3f",
+    title: "Kult",
+    url: "https://www.instagram.com/kult_app",
+    image: "projects/kult.jpg",
+    description: "Plataforma social para descobrir e recomendar filmes, séries, músicas, podcasts e livros.",
   },
   {
-    title: "3D Avatar",
-    url: "https://www.youtube.com/watch?v=pGMKIyALcK0",
-    image: "projects/avatar.jpg",
-    description: "Learn how to use ReadyPlayerMe to create a 3D avatar",
-  },
-  {
-    title: "Kanagame",
-    url: "https://www.youtube.com/watch?v=zwNF1-lsia8",
-    image: "projects/kanagame.jpg",
-    description: "Use React Three Fiber to create a 3D game",
-  },
-  {
-    title: "Loader",
-    url: "https://www.youtube.com/watch?v=L12wIvuZTOY",
-    image: "projects/loader.jpg",
-    description: "Create a loading screen for your r3f projects",
+    title: "Jambu Resto Bar",
+    url: "https://www.instagram.com/jamburestobar.pt",
+    image: "projects/jambu.jpg",
+    description: "Restaurante em Porto",
   },
 ];
 
